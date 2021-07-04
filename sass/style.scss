@@ -112,17 +112,15 @@ li {
 }
 @keyframes myAnimation {
   from {
-    transform: scale(1);
   }
   to {
-    transform: scale(1.5);
   }
 }
 
 /****header*****/
 header {
   .navbar {
-    navbar-brand {
+    .navbar-nav {
     }
   }
 }
