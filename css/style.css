@@ -36,6 +36,21 @@ li {
   --bs-gutter-y: 0;
 }
 
+header .navbar .nav-link, header .banner-section .myToggle .button {
+  color: #1e266d;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 10px;
+  border-radius: 20px;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
+
+header .navbar .nav-link:hover, header .banner-section .myToggle .button:hover, header .navbar .nav-link:focus, header .banner-section .myToggle .button:focus {
+  color: #fff;
+  background: #364ffa !important;
+}
+
 @-webkit-keyframes myAnimation {
   from {
   }
@@ -51,4 +66,80 @@ li {
 }
 
 /****header*****/
+header {
+  width: 100%;
+}
+
+header .navbar {
+  padding: 20px 0;
+}
+
+header .navbar .dropdown-menu {
+  border: 0 !important;
+  background: none;
+}
+
+header .navbar .dropdown-menu .dropdown-item {
+  display: inline-block;
+  font-weight: 600;
+  color: #1e266d;
+  border: 3px solid #1e266d;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  background: #fff;
+}
+
+header .navbar .dropdown-menu .dropdown-item:hover, header .navbar .dropdown-menu .dropdown-item:focus {
+  color: #fff !important;
+  background: #333 !important;
+}
+
+header .navbar .active a {
+  color: #fff;
+  background-color: #364ffa;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 10px;
+  border-radius: 20px;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
+
+header .navbar .active a:hover, header .navbar .active a:focus {
+  color: #fff;
+  background: #333 !important;
+}
+
+header .banner-section .heading h1 {
+  font-weight: 700;
+  text-align: center;
+  color: #1e266d;
+  margin-top: 50px;
+}
+
+header .banner-section .content p {
+  text-align: center;
+  color: #455880;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+header .banner-section .myToggle {
+  width: 50%;
+  margin: auto;
+}
+
+header .banner-section .myToggle .left-btn {
+  text-align: right;
+}
+
+header .banner-section .myToggle .right-btn {
+  text-align: left;
+}
+
+header .banner-section .myToggle .button {
+  border: 2px solid #364ffa;
+  padding: 1rem !important;
+}
 /*# sourceMappingURL=style.css.map */

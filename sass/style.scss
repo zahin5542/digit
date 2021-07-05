@@ -7,7 +7,10 @@
   scroll-behavior: smooth;
 }
 
-$themeColor: #fff;
+$themePrimaryColor: #1e266d;
+$themesecondaryColor: #455880;
+$buttonColor: #364ffa;
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -61,8 +64,24 @@ li {
 }
 
 %btn {
+  color: $themePrimaryColor;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 10px;
+  border-radius: 20px;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: $buttonColor !important;
+  }
+}
+
+%btnAdvance {
   border-radius: 4px;
-  background-color: #dc3545;
+  background-color: $buttonColor;
   border: none;
   color: #ffffff;
   text-align: center;
@@ -119,8 +138,83 @@ li {
 
 /****header*****/
 header {
+  width: 100%;
   .navbar {
-    .navbar-nav {
+    padding: 20px 0;
+    .nav-link {
+      @extend %btn;
+    }
+    .dropdown-menu {
+      border: 0 !important;
+      background: none;
+      .dropdown-item {
+        display: inline-block;
+        font-weight: 600;
+        color: $themePrimaryColor;
+        border: 3px solid $themePrimaryColor;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        background: #fff;
+        &:hover,
+        &:focus {
+          color: #fff !important;
+          background: #333 !important;
+        }
+      }
+    }
+    .active {
+      a {
+        color: #fff;
+        background-color: $buttonColor;
+        font-size: 15px;
+        font-weight: 600;
+        margin: 0 10px;
+        border-radius: 20px;
+        padding-right: 1rem !important;
+        padding-left: 1rem !important;
+
+        &:hover,
+        &:focus {
+          color: #fff;
+          background: #333 !important;
+        }
+      }
+    }
+  }
+
+  .banner-section {
+    .heading {
+      h1 {
+        font-weight: 700;
+        text-align: center;
+        color: $themePrimaryColor;
+        margin-top: 50px;
+      }
+    }
+    .content {
+      p {
+        text-align: center;
+        color: $themesecondaryColor;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+    }
+    .myToggle {
+      width: 50%;
+      margin: auto;
+      .left-btn {
+        text-align: right;
+      }
+      .right-btn {
+        text-align: left;
+      }
+      .button {
+        @extend %btn;
+
+        border: 2px solid $buttonColor;
+        padding: 1rem !important;
+      }
     }
   }
 }
