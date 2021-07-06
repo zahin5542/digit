@@ -39,6 +39,9 @@ li {
   --bs-gutter-y: 0;
   // padding: 0px 20px;
 }
+.left {
+  text-align: left;
+}
 
 %flex {
   display: flex;
@@ -302,6 +305,11 @@ header {
           @extend %p;
           text-align: left;
         }
+        &:hover,
+        &:focus {
+          box-shadow: 5px 5px 13px #496f8e, -5px -5px 13px #ffffff;
+          border-radius: 10px;
+        }
       }
     }
   }
@@ -374,13 +382,75 @@ header {
       font-weight: 700;
       color: #fff;
       text-align: left;
+      margin-top: 70px;
     }
     .myContact {
       text-align: right;
+      margin-top: auto;
       .button {
+        @extend %btn;
+        border: 2px solid;
+        display: block;
+        margin-left: auto;
+        b {
+          margin-left: 10px;
+        }
       }
       p {
+        @extend %p;
+        text-align: right;
+        color: #ffffff;
       }
+    }
+  }
+}
+
+footer {
+  .others {
+    @extend %flex;
+    align-items: flex-start !important;
+    p {
+      @extend %p;
+      text-align: left;
+      padding: 0px 30px;
+      color: #333;
+    }
+
+    .social_icons {
+      margin: 10px 0px;
+      > ul {
+        @extend %flex;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+        a {
+          margin-right: 10px;
+        }
+      }
+      .fab,
+      .far {
+        color: #333;
+        font-size: 25px;
+      }
+    }
+    a {
+      font-size: 18px;
+      font-weight: 400;
+      text-transform: capitalize;
+      color: #333;
+    }
+
+    .listHead {
+      > a {
+        color: #333;
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+    }
+
+    li {
+      display: block;
+      margin: 10px 0;
     }
   }
 }
