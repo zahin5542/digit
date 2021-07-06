@@ -1,6 +1,35 @@
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   /* header starts */
+  header .navbar .nav-link {
+    text-align: right;
+  }
+  header .banner-section .heading h1,
+  .features-section .heading h1,
+  .design-section .design .heading h1,
+  .client-section .heading h1 {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  header .banner-section .content p,
+  .features-section .features .feature-option .option-content p,
+  .design-section .design .heading p,
+  .client-section .client .card p,
+  .website-ad-section .website-ad .myContact p,
+  footer .others p {
+    font-size: 12px;
+  }
+  footer .others li {
+    margin: 5px 0;
+    text-align: center;
+  }
+  .client-section .client .card p {
+    height: 120px;
+  }
+  footer .others .social_icons > ul {
+    justify-content: center !important;
+    align-items: center;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */

@@ -63,7 +63,7 @@ li {
   color: $themesecondaryColor;
   font-size: 18px;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   margin-top: 20px;
 }
 
@@ -78,63 +78,6 @@ li {
   &:focus {
     color: #fff;
     background: $buttonColor !important;
-  }
-}
-
-%btnAdvance {
-  border-radius: 4px;
-  background-color: $buttonColor;
-  border: none;
-  color: #ffffff;
-  text-align: center;
-  font-size: 28px;
-  padding: 5px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 15px 0px;
-
-  span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-    font-size: 20px;
-    text-transform: uppercase;
-    &::after {
-      content: "\00bb";
-      position: absolute;
-      opacity: 0;
-      top: 0;
-      right: -20px;
-      transition: 0.5s;
-    }
-  }
-  &:hover span {
-    padding-right: 25px;
-  }
-
-  &:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
-  &:hover,
-  &:focus {
-    color: #fff;
-    background: black;
-  }
-}
-%animation {
-  animation: myAnimation;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-direction: alternate;
-}
-@keyframes myAnimation {
-  from {
-  }
-  to {
   }
 }
 
@@ -192,6 +135,32 @@ header {
           color: #fff;
           background: #333 !important;
         }
+      }
+    }
+    .menuToggle {
+      width: 50px;
+      padding: 0;
+      border: 0;
+      span {
+        display: block;
+        width: 70px;
+        height: 5px;
+        background: #333;
+        margin: auto;
+        margin-bottom: 5px;
+        transition-duration: 0.3s;
+      }
+      span:first-child {
+        width: 50%;
+      }
+      span:last-child {
+        width: 30%;
+      }
+      &:focus {
+        box-shadow: 0 0 0 0;
+      }
+      &:hover span {
+        width: 100%;
       }
     }
   }
@@ -301,7 +270,7 @@ header {
         }
       }
       .option-content {
-        padding: 0 10px;
+        padding: 10px 10px;
         float: right;
         h3 {
           font-size: 20px;
@@ -391,6 +360,7 @@ header {
       font-weight: 700;
       color: #fff;
       text-align: left;
+      margin-bottom: 10px;
     }
     .myContact {
       text-align: right;
@@ -427,11 +397,13 @@ footer {
       display: block;
       width: 40px;
       margin-right: auto;
+      color: #333 !important;
     }
     .quote-end {
       display: block;
       width: 40px;
       margin-left: auto;
+      color: #333 !important;
     }
 
     .social_icons {

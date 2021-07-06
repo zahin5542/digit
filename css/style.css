@@ -59,7 +59,7 @@ header .banner-section .content p, .features-section .features .feature-option .
   color: #455880;
   font-size: 18px;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   margin-top: 20px;
 }
 
@@ -74,20 +74,6 @@ header .navbar .nav-link, header .banner-section .myToggle .button, .design-sect
 header .navbar .nav-link:hover, header .banner-section .myToggle .button:hover, .design-section .design .heading .button:hover, .website-ad-section .website-ad .myContact .button:hover, header .navbar .nav-link:focus, header .banner-section .myToggle .button:focus, .design-section .design .heading .button:focus, .website-ad-section .website-ad .myContact .button:focus {
   color: #fff;
   background: #364ffa !important;
-}
-
-@-webkit-keyframes myAnimation {
-  from {
-  }
-  to {
-  }
-}
-
-@keyframes myAnimation {
-  from {
-  }
-  to {
-  }
 }
 
 header .banner-section .heading, .features-section .heading, .design-section .design .heading, .client-section .heading {
@@ -140,6 +126,40 @@ header .navbar .active a {
 header .navbar .active a:hover, header .navbar .active a:focus {
   color: #fff;
   background: #333 !important;
+}
+
+header .navbar .menuToggle {
+  width: 50px;
+  padding: 0;
+  border: 0;
+}
+
+header .navbar .menuToggle span {
+  display: block;
+  width: 70px;
+  height: 5px;
+  background: #333;
+  margin: auto;
+  margin-bottom: 5px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+header .navbar .menuToggle span:first-child {
+  width: 50%;
+}
+
+header .navbar .menuToggle span:last-child {
+  width: 30%;
+}
+
+header .navbar .menuToggle:focus {
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+}
+
+header .navbar .menuToggle:hover span {
+  width: 100%;
 }
 
 header .banner-section .myToggle {
@@ -233,7 +253,7 @@ header .carousel .carousel-indicators [data-bs-target] {
 }
 
 .features-section .features .feature-option .option-content {
-  padding: 0 10px;
+  padding: 10px 10px;
   float: right;
 }
 
@@ -315,6 +335,7 @@ header .carousel .carousel-indicators [data-bs-target] {
   font-weight: 700;
   color: #fff;
   text-align: left;
+  margin-bottom: 10px;
 }
 
 .website-ad-section .website-ad .myContact {
@@ -353,12 +374,14 @@ footer .others .quote-start {
   display: block;
   width: 40px;
   margin-right: auto;
+  color: #333 !important;
 }
 
 footer .others .quote-end {
   display: block;
   width: 40px;
   margin-left: auto;
+  color: #333 !important;
 }
 
 footer .others .social_icons {
