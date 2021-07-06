@@ -1,0 +1,36 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* header starts */
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* header starts */
+}
+
+/* Medium devices(sm) (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* header starts */
+  .client-section .client .card p {
+    height: 200px;
+  }
+  .features-section .features .feature-option .option-content h3 {
+    font-size: 15px;
+  }
+  header .banner-section .content p,
+  .features-section .features .feature-option .option-content p,
+  .design-section .design .heading p,
+  .client-section .client .card p,
+  .website-ad-section .website-ad .myContact p,
+  footer .others p {
+    font-size: 12px;
+  }
+}
+
+/* Large devices(md) (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

@@ -67,7 +67,6 @@ header .navbar .nav-link, header .banner-section .myToggle .button, .design-sect
   color: #1e266d;
   font-size: 15px;
   font-weight: 600;
-  margin: 0 10px;
   border-radius: 30px;
   padding: 1rem 1rem !important;
 }
@@ -150,10 +149,14 @@ header .banner-section .myToggle {
 
 header .banner-section .myToggle .left-btn {
   text-align: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 header .banner-section .myToggle .right-btn {
   text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 header .banner-section .myToggle .button {
@@ -187,6 +190,8 @@ header .carousel .carousel-item .user-face-swap {
 
 header .carousel .carousel-indicators [data-bs-target] {
   width: 20px !important;
+  height: 20px !important;
+  border: 0;
   border-radius: 50%;
   background: royalblue !important;
 }
@@ -223,10 +228,12 @@ header .carousel .carousel-indicators [data-bs-target] {
 .features-section .features .feature-option .feat img {
   float: left;
   margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 10px;
 }
 
 .features-section .features .feature-option .option-content {
-  padding: 0 50px;
+  padding: 0 10px;
   float: right;
 }
 
@@ -260,7 +267,7 @@ header .carousel .carousel-indicators [data-bs-target] {
 }
 
 .client-section .client {
-  padding: 0px 40px;
+  padding: 1rem !important;
 }
 
 .client-section .client .card {
@@ -284,6 +291,9 @@ header .carousel .carousel-indicators [data-bs-target] {
 }
 
 .client-section .client .card h5 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
   display: block;
   margin: 1rem;
   text-align: center;
@@ -298,7 +308,6 @@ header .carousel .carousel-indicators [data-bs-target] {
 
 .website-ad-section {
   background-color: #364ffa;
-  height: 40vh;
 }
 
 .website-ad-section .website-ad h1 {
@@ -306,7 +315,6 @@ header .carousel .carousel-indicators [data-bs-target] {
   font-weight: 700;
   color: #fff;
   text-align: left;
-  margin-top: 70px;
 }
 
 .website-ad-section .website-ad .myContact {
@@ -339,6 +347,18 @@ footer .others p {
   text-align: left;
   padding: 0px 30px;
   color: #333;
+}
+
+footer .others .quote-start {
+  display: block;
+  width: 40px;
+  margin-right: auto;
+}
+
+footer .others .quote-end {
+  display: block;
+  width: 40px;
+  margin-left: auto;
 }
 
 footer .others .social_icons {

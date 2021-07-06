@@ -71,7 +71,6 @@ li {
   color: $themePrimaryColor;
   font-size: 15px;
   font-weight: 600;
-  margin: 0 10px;
   border-radius: 30px;
   padding: 1rem 1rem !important;
 
@@ -211,9 +210,13 @@ header {
       margin: auto;
       .left-btn {
         text-align: right;
+        margin-top: 10px;
+        margin-bottom: 10px;
       }
       .right-btn {
         text-align: left;
+        margin-top: 10px;
+        margin-bottom: 10px;
       }
       .button {
         @extend %btn;
@@ -246,6 +249,8 @@ header {
     }
     .carousel-indicators [data-bs-target] {
       width: 20px !important;
+      height: 20px !important;
+      border: 0;
       border-radius: 50%;
       background: royalblue !important;
     }
@@ -291,10 +296,12 @@ header {
         img {
           float: left;
           margin-top: 5px;
+          margin-bottom: 10px;
+          margin-left: 10px;
         }
       }
       .option-content {
-        padding: 0 50px;
+        padding: 0 10px;
         float: right;
         h3 {
           font-size: 20px;
@@ -341,7 +348,7 @@ header {
     margin-bottom: 30px;
   }
   .client {
-    padding: 0px 40px;
+    padding: 1rem !important;
     .card {
       border: 2px solid rgba(51, 51, 51, 0.466);
       border-radius: 10px;
@@ -359,6 +366,9 @@ header {
         margin: auto;
       }
       h5 {
+        font-size: 20px;
+        font-weight: 600;
+        color: #333;
         display: block;
         margin: 1rem;
         text-align: center;
@@ -375,14 +385,12 @@ header {
 
 .website-ad-section {
   background-color: $buttonColor;
-  height: 40vh;
   .website-ad {
     h1 {
       font-size: 40px;
       font-weight: 700;
       color: #fff;
       text-align: left;
-      margin-top: 70px;
     }
     .myContact {
       text-align: right;
@@ -414,6 +422,16 @@ footer {
       text-align: left;
       padding: 0px 30px;
       color: #333;
+    }
+    .quote-start {
+      display: block;
+      width: 40px;
+      margin-right: auto;
+    }
+    .quote-end {
+      display: block;
+      width: 40px;
+      margin-left: auto;
     }
 
     .social_icons {
