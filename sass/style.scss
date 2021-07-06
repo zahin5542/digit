@@ -56,11 +56,12 @@ li {
   line-height: 20px;
 }
 %p {
-  margin-bottom: 50px;
-  font-size: 30px;
+  text-align: center;
+  color: $themesecondaryColor;
+  font-size: 18px;
   font-weight: 400;
-  color: #333 !important;
-  font-family: "Poppins", sans-serif !important;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 %btn {
@@ -68,9 +69,8 @@ li {
   font-size: 15px;
   font-weight: 600;
   margin: 0 10px;
-  border-radius: 20px;
-  padding-right: 1rem !important;
-  padding-left: 1rem !important;
+  border-radius: 30px;
+  padding: 1rem 1rem !important;
 
   &:hover,
   &:focus {
@@ -136,9 +136,22 @@ li {
   }
 }
 
+%myHeading {
+  background: linear-gradient(
+    180deg,
+    rgba(242, 249, 255, 0.12) 0%,
+    #f2f9ff 100%
+  );
+  h1 {
+    font-weight: 700;
+    text-align: center;
+    color: $themePrimaryColor;
+    margin-top: 50px;
+  }
+}
+
 /****header*****/
 header {
-  width: 100%;
   .navbar {
     padding: 20px 0;
     .nav-link {
@@ -169,9 +182,8 @@ header {
         font-size: 15px;
         font-weight: 600;
         margin: 0 10px;
-        border-radius: 20px;
-        padding-right: 1rem !important;
-        padding-left: 1rem !important;
+        border-radius: 30px;
+        padding: 1rem 1rem !important;
 
         &:hover,
         &:focus {
@@ -184,20 +196,11 @@ header {
 
   .banner-section {
     .heading {
-      h1 {
-        font-weight: 700;
-        text-align: center;
-        color: $themePrimaryColor;
-        margin-top: 50px;
-      }
+      @extend %myHeading;
     }
     .content {
       p {
-        text-align: center;
-        color: $themesecondaryColor;
-        font-size: 18px;
-        font-weight: 400;
-        margin-bottom: 20px;
+        @extend %p;
       }
     }
     .myToggle {
@@ -211,9 +214,172 @@ header {
       }
       .button {
         @extend %btn;
-
-        border: 2px solid $buttonColor;
+        width: 150px;
+        height: 70px;
         padding: 1rem !important;
+        border: 2px solid;
+        display: block;
+        margin: auto;
+      }
+    }
+  }
+  .carousel {
+    .carousel-item {
+      > img {
+        position: relative;
+      }
+      .user-face {
+        position: absolute;
+        top: 19%;
+        left: 20%;
+        transform: translate(-50%, -20%);
+      }
+      .user-face-swap {
+        position: absolute;
+        top: 19%;
+        right: 15%;
+        transform: translate(-50%, -20%);
+      }
+    }
+    .carousel-indicators [data-bs-target] {
+      width: 20px !important;
+      border-radius: 50%;
+      background: royalblue !important;
+    }
+  }
+}
+
+.brands-section {
+  .shaded-words {
+    p {
+      text-align: center;
+      font-size: 12px;
+      color: #9e9e9e;
+      text-transform: capitalize;
+      margin-top: 30px;
+    }
+  }
+  .brands {
+    @extend %flex;
+    li {
+      &:hover {
+        border: 2px solid;
+      }
+      img {
+        margin: 10px 30px;
+      }
+    }
+  }
+}
+
+.features-section {
+  .heading {
+    @extend %myHeading;
+  }
+  .features {
+    > img {
+      float: left;
+    }
+    .feature-option {
+      margin-top: 15%;
+      padding: 0 50px;
+      .feat {
+        margin-bottom: 30px;
+        img {
+          float: left;
+          margin-top: 5px;
+        }
+      }
+      .option-content {
+        padding: 0 50px;
+        float: right;
+        h3 {
+          font-size: 20px;
+          font-weight: 700;
+          color: $themePrimaryColor;
+        }
+        p {
+          @extend %p;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+.design-section {
+  .design {
+    .heading {
+      @extend %myHeading;
+      p {
+        @extend %p;
+      }
+      .button {
+        @extend %btn;
+        width: 150px;
+        height: 70px;
+        padding: 1rem !important;
+        border: 2px solid;
+        display: block;
+        margin: auto;
+      }
+    }
+  }
+}
+
+.client-section {
+  .heading {
+    @extend %myHeading;
+    margin-bottom: 30px;
+  }
+  .client {
+    padding: 0px 40px;
+    .card {
+      border: 2px solid rgba(51, 51, 51, 0.466);
+      border-radius: 10px;
+      &:hover,
+      &focus {
+        box-shadow: 5px 5px 13px #496f8e, -5px -5px 13px #ffffff;
+      }
+      p {
+        @extend %p;
+        padding: 10px;
+        text-align: left;
+        height: 250px;
+      }
+      img {
+        margin: auto;
+      }
+      h5 {
+        display: block;
+        margin: 1rem;
+        text-align: center;
+      }
+      span {
+        display: block;
+        font-size: 15px;
+        color: #333;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.website-ad-section {
+  background-color: $buttonColor;
+  height: 40vh;
+  .website-ad {
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+      color: #fff;
+      text-align: left;
+    }
+    .myContact {
+      text-align: right;
+      .button {
+      }
+      p {
       }
     }
   }
