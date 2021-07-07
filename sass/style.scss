@@ -443,4 +443,8 @@ footer {
       margin: 10px 0;
     }
   }
+  .copyRight {
+    @extend %flex;
+    text-align: center;
+  }
 }

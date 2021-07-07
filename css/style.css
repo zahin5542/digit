@@ -40,7 +40,7 @@ li {
   text-align: left;
 }
 
-.brands-section .brands, footer .others, footer .others .social_icons > ul {
+.brands-section .brands, footer .others, footer .others .social_icons > ul, footer .copyRight {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -424,5 +424,9 @@ footer .others .listHead > a {
 footer .others li {
   display: block;
   margin: 10px 0;
+}
+
+footer .copyRight {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
